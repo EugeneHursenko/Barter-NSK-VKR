@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <p><b><h1 class="text0">Бартер-НСК</h1></b>
     <div class="container2">
-         <button class="menuitem2" ><a href="{{url_for('login')}}">Вход</a></button>
-         <button class="menuitem2"> <a href="{{url_for('register')}}">Регистрация</a></button>
+         <button class="menuitem2"><a href="{{url_for('login')}}">Вход</a></button>
+         <button class="menuitem2"><a href="{{url_for('register')}}">Регистрация</a></button>
          <div class="search-box">
   <form action="#">
     <input type="text" size="40"  placeholder="Поиск по объявлениям..." name="search">
@@ -203,7 +203,7 @@ a.button29 {
   display: inline-block;
      background: #dcdcdc url(static/images/fon_goods.jpg) no-repeat;
   width: 9em;
-  height: 5.9em;
+  height: 5em;
   line-height: 1em;
   vertical-align: middle;
   text-align: center;
@@ -289,9 +289,14 @@ a.button29:active {
       width: 600px;
       height: 50px;
        cursor: pointer;
-
       }
-
+.container3 {
+      display: flex;
+      overflow: auto;
+      width: 85%;
+      height: 87px;
+      margin: 0% auto auto 10%;
+      }
   a:active,
   a:hover,
   a {
@@ -331,7 +336,7 @@ header {
     <hr class="hr-dashed-bg">
  <h2 class="text2">Новые объявления</h2>
 
-    <div class="container">
+    <div class="container3">
     <a href="#" class="button29"><p><small>Заголовок последнего объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок предпоследнего объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок объявления, которое было до предпоследнего</small></p></a>
@@ -341,7 +346,7 @@ header {
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
     </div>
 <br>
-    <div class="container">
+    <div class="container3">
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
