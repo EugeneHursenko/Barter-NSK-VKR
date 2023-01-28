@@ -30,7 +30,7 @@
 
 <body>
  <hr class="hr-dashed-bg">
-    <h2 class="text1">Категории  Реклама </h2>
+
 <style>
 
 body {
@@ -43,7 +43,8 @@ font-size: 14px;
 button {
  height: 26px;
  border-radius: 5px;
- border: 3px solid #ece6ff;
+ border: 3px solid #cdc6e7;
+ background-color: #ece6ff;
 }
 button:hover {
   border: 3px solid #8d81b5;
@@ -105,7 +106,7 @@ button:before {
   padding: 50px 0;
   list-style: none;
   text-align: left;
-  background-color: #ECEFF1;
+  background-color: #ece6ff;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
     opacity: 85%;
     border-radius: 5px;
@@ -131,7 +132,7 @@ button:before {
   text-decoration: none;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #cdc6e7;
 }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -257,9 +258,10 @@ a.button29:active {
 .text1 {
   margin-top: -26px;
     margin-bottom: 7px;
-    margin-left: 38.5vw;
     color: #cdc6e7;
-    word-spacing : 36vw;
+    word-spacing : 31.5vw;
+    position: fixed;
+  left: 34.5%;
 
 }
 .text2 {
@@ -276,6 +278,14 @@ a.button29:active {
       height: 104px;
       margin: 0% auto auto 10%;
       }
+  .container1 {
+      display: flex;
+      overflow: auto;
+      width: 85%;
+      height: 104px;
+      margin: 0% auto auto 10%;
+      }
+
   .container2 {
       display: flex;
       overflow: visible;
@@ -311,7 +321,8 @@ header {
 
 
 </style>
-  <div class="container">
+  <div class="container1">
+    <h2 class="text1">Категории  Реклама </h2>
     <a href="#" class="button27"><p><small>Готовая еда (999)<br><img height='50' src='static/images/fon_button1_.jpg' /></small></p></a>
     <a href="#" class="button27"><p><small>Для дома (999)<br><img height='45' src='static/images/fon_button2_.jpg' /></small></p></a>
     <a href="#" class="button27"><p><small>Услуги (999)<br><img height='50' src='static/images/fon_button3_.jpg' /></small></p></a>
