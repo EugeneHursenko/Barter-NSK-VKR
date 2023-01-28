@@ -1,34 +1,36 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 
  <head>
      <title>Barter-NSK</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-     <h1 class="text0">Бартер-НСК</h1>
 
-    <div class="container_top">
+      <h1 class="text0">Бартер-НСК</h1>
+
+        <div class="container_top">
          <button class="menuitem2">
              <a href="#">Вход</a></button>
          <button class="menuitem2">
              <a href="#">Регистрация</a></button>
-         <div class="search-box">
-  <form action="#">
-    <input type="text" size="40"  placeholder="Поиск по объявлениям..." name="search">
-    <button type="submit">&#128269;</button>
-  </form>
-         </div>
+           <div class="search-box">
+             <form action="#">
+               <input type="text" size="40"  placeholder="Поиск по объявлениям..." name="search">
+               <button type="submit">&#128269;</button>
+             </form>
+           </div>
           <div class="hamburger-menu">
-     <input id="menu__toggle" type="checkbox" />
-     <label class="menu__btn" for="menu__toggle">
-      <span></span>
-     </label>
-      <ul class="menu__box">
-      <li><a class="menu__item" href="#">Личный кабинет</a></li>
-      <li><a class="menu__item" href="#">Добавить объявление</a></li>
-      <li><a class="menu__item" href="#">О проекте</a></li>
-      </ul>
+           <input id="menu__toggle" type="checkbox" />
+           <label class="menu__btn" for="menu__toggle">
+           <span></span>
+           </label>
+            <ul class="menu__box">
+            <li><a class="menu__item" href="#">Личный кабинет</a></li>
+            <li><a class="menu__item" href="#">Добавить объявление</a></li>
+            <li><a class="menu__item" href="#">О проекте</a></li>
+            </ul>
           </div>
-    </div>
+        </div>
  </head>
 
  <body>
@@ -112,8 +114,8 @@ button:before {
   background-color: #ece6ff;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
     opacity: 85%;
-    border-radius: 5px;
-    border: 3px solid #ece6ff;
+    border-radius: 8px;
+    border: 3px solid #8d81b5;
 }
 /* элементы ниспадающего меню */
 .menu__item {
@@ -139,28 +141,31 @@ button:before {
 }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
+  transition: 1.5s;
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
-  transform: rotate(0);
+  transition: 1.5s;
+  transform: rotate(90deg);
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
+  transition: 1.5s;
   transform: rotate(90deg);
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
-  left: 0;
-}
+ }
 
 a.button27 {
   position: relative;
+    bottom: 1px;
   display: inline-block;
     background: #FFFFFF  no-repeat;
   width: 9em;
   height: 5.9em;
   line-height: 1em;
-  vertical-align: middle;
+  vertical-align: bottom;
   text-align: center;
   text-decoration: none;
   color: #000;
@@ -168,7 +173,7 @@ a.button27 {
   border-radius: 5px;
     border: 3px solid #ece6ff;
   box-shadow: 0 0 0 1px #ddd inset, 0 1px 1px #fff;
-     margin-left:3%
+
 }
 a.button27:hover {
   border: 3px solid #8d81b5;
@@ -179,9 +184,10 @@ a.button27:active {
 }
 a.button28 {
   position: relative;
+    bottom: 1px;
   display: inline-block;
     background: #dcdcdc url(static/images/fon_b_ad.jpg) no-repeat;
-  width: 10em;
+  width: 9em;
   height: 5.8em;
   line-height: 1em;
   vertical-align: middle;
@@ -192,7 +198,7 @@ a.button28 {
   border-radius: 5px;
     border: 3px solid #ece6ff;
   box-shadow: 0 0 0 1px #ddd inset, 0 1px 1px #fff;
-     margin-left:10%
+
 }
 a.button28:hover {
     border: 3px solid #8d81b5;
@@ -206,10 +212,10 @@ a.button29 {
   position: relative;
   display: inline-block;
      background: #dcdcdc url(static/images/fon_goods.jpg) no-repeat;
-  width: 9em;
+  width: 7.2em;
   height: 5em;
   line-height: 1em;
-  vertical-align: middle;
+  vertical-align: top;
   text-align: center;
   text-decoration: none;
   font-weight: 200;
@@ -218,8 +224,8 @@ a.button29 {
   border-radius: 5px;
     border: 3px solid #ece6ff;
   box-shadow: 0 0 0 1px #ddd inset, 0 1px 1px #fff;
-  margin-left:3%;
-  opacity: 75%;
+    opacity: 75%;
+
 }
 a.button29:hover {
   border: 3px solid #8d81b5;
@@ -241,7 +247,18 @@ a.button29:active {
 	border-top: 3px dashed #8d81b5;
 	background: #cdc6e7;
     background-size: 16px 5px, 100% 5px;
-    border-bottom: 2px solid #ece6ff;
+    border-bottom: 2px solid #cdc6e7;
+
+}
+.hr-dashed-bg2 {
+	margin: -19px;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px solid #cdc6e7;
+	background: #cdc6e7;
+    background-size: 16px 5px, 100% 5px;
+    border-bottom: 3px dashed #8d81b5;
 
 }
 .text0 {
@@ -259,21 +276,24 @@ a.button29:active {
   left: 40px;
 }
 .text1 {
-  margin-top: -26px;
+  margin-top: -31.5px;
     margin-bottom: 7px;
     color: #cdc6e7;
-    word-spacing : 31.5vw;
-    position: fixed;
-  left: 34.5%;
-
 }
 .text2 {
-  margin-top: -26px;
-    margin-bottom: 7px;
+  margin-top: 10px;
+    margin-bottom: 0;
     color: #cdc6e7;
     word-spacing : 8px;
     text-align: center;
-}
+    }
+.text3 {
+  margin-top: 0;
+    margin-bottom: 2px;
+    color: #000;
+    word-spacing : 8px;
+       font-weight: 300;
+      }
 .container_top {
       display: flex;
       overflow: visible;
@@ -289,24 +309,32 @@ a.button29:active {
 
   .container {
       display: flex;
-      overflow: auto;
-      width: 85%;
-      height: 104px;
-      margin: 0 auto auto 10%;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 90%;
+    height: 390px;
+        border-radius: 8px;
+    border: 4px dotted #8d81b5;
+    z-index: -2;
       }
-  .container1 {
-      display: flex;
-      overflow: auto;
-      width: 85%;
-      height: 104px;
-      margin: 0 auto auto 10%;
-      }
+
 .container_new {
       display: flex;
-      overflow: auto;
-      width: 85%;
-      height: 87px;
-      margin: 0 auto auto 10%;
+    flex-wrap: wrap;
+    position: relative;
+    top: -5px;
+    left: 40px;
+    width: 94%;
+    height: 219px;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a3a3c2;
+    border-radius: 8px;
+    border: 4px dotted #8d81b5;
       }
   a:active,
   a:hover,
@@ -319,52 +347,157 @@ head {
       width: 100%;
       height: 27px;
 }
+.left_box {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -19.5px;
+    left: 160px;
+    width: 68%;
+    height: 219px;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a3a3c2;
+    border-radius: 8px;
+    border: 3px dashed #8d81b5;
+
+}
+.right_box {
+     display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 52px;
+    right: 50px;
+    width: 10em;
+    height: 219px;
+    margin: 0;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a3a3c2;
+    border-radius: 8px;
+    border: 3px dashed #8d81b5;
+}
+.small_box {
+  position: relative;
+    top: -10px;
+  display: inline-block;
+    background: #a3a3c2  no-repeat;
+  width: 10em;
+  height: 7.7em;
+    justify-content: space-between;
+    align-items: normal;
+  line-height: 14px;
+  vertical-align: bottom;
+  text-align: center;
+  text-decoration: none;
+  color: #ece6ff;
+  outline: none;
+  border-radius: 5px;
+}
+.small_box2 {
+    position: relative;
+    display: inline-block;
+    background: #a3a3c2 no-repeat;
+    width: 10em;
+    height: 6.5em;
+    line-height: 1em;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    color: #ece6ff;
+    outline: none;
+    border-radius: 5px;
+}
+.small_box3 {
+  position: relative;
+    top: 2px;
+  display: inline-block;
+    background: #a3a3c2  no-repeat;
+  width: 9em;
+  height: 7.7em;
+    justify-content: start;
+    align-items: normal;
+  line-height: 12px;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  color: #ece6ff;
+  outline: none;
+  border-radius: 5px;
+    border: 2px dashed #8d81b5;
+    margin-left:0.5%;
+    margin-right:0.5%
+}
   </style>
-  <div class="container1">
-    <h2 class="text1">Категории  Реклама </h2>
-    <a href="#" class="button27"><br/><small>Готовая еда (999)<br><img height='50' src='static/images/fon_button1_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Для дома (999)<br><img height='45' src='static/images/fon_button2_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Услуги (999)<br><img height='50' src='static/images/fon_button3_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Животные (999)<br><img height='40' src='static/images/fon_button4_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Электроника (999)<br><img height='45' src='static/images/fon_button5_.jpg' alt=""/></small></a>
-    <a href="#" class="button28"></a>
+ </div>
+
+
+     <div class="left_box">
+      <div class="small_box"><br><br/>
+        <h2 class="text1">........................</h2>
+          <a href="#" class="button27"><br/><small>Готовая еда (999)<br><img height='50' src='static/images/fon_button1_.jpg' alt=""/></small></a></div>
+      <div class="small_box"><br><br/>
+        <h2 class="text1">........................</h2><a href="#" class="button27"><br/><small>Для дома (999)<br><img height='45' src='static/images/fon_button2_.jpg' alt=""/></small></a></div>
+      <div class="small_box"> <br><br/>
+        <h2 class="text1">Категории</h2>
+        <a href="#" class="button27"><br/><small>Услуги (999)<br><img height='50' src='static/images/fon_button3_.jpg' alt=""/></small></a></div>
+      <div class="small_box"><br><br/>
+        <h2 class="text1">........................</h2><a href="#" class="button27"><br/><small>Животные (999)<br><img height='40' src='static/images/fon_button4_.jpg' alt=""/></small></a></div>
+      <div class="small_box"><br><br/>
+        <h2 class="text1">........................</h2><a href="#" class="button27"><br/><small>Электроника (999)<br><img height='45' src='static/images/fon_button5_.jpg' alt=""/></small></a></div>
+      <div class="small_box2"><a href="#" class="button27"><br/><small>Личные вещи (999)<br><img height='49' src='static/images/fon_button1a_.jpg' alt=""/></small></a></div>
+      <div class="small_box2"><a href="#" class="button27"><br/><small>Хобби (999)<br><img height='45' src='static/images/fon_button2a_.jpg' alt=""/></small></a></div>
+      <div class="small_box2"><a href="#" class="button27"><br/><small>Здоровье (999)<br><img height='45' src='static/images/fon_button3a_.jpg' alt=""/></small></a></div>
+      <div class="small_box2"><a href="#" class="button27"><br/><small>Транспорт (999)<br><img height='40' src='static/images/fon_button4a_.jpg' alt=""/></small></a></div>
+      <div class="small_box2"><a href="#" class="button27"><br/><small>Прочее (999)<br><img height='40' src='static/images/fon_button5a_.jpg' alt=""/></small></a></div>
+     </div>
+     <div class="right_box">
+      <div class="small_box"><br><br/>
+        <h2 class="text1">Реклама</h2>
+          <a href="#" class="button28"></a></div>
+      <div class="small_box2"><a href="#" class="button28"></a></div>
+     </div>
+
+
+    <hr class="hr-dashed-bg2">
+
+    <h2 class="text2">Новые объявления</h2>
+    <div class="container_new">
+
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок последнего объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок предпоследнего объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления, которое было до предпоследнего</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+    <div class="small_box3">
+        <h4 class="text3">или здесь заголовок...</h4><a href="#" class="button29"><small>Заголовок объявления</small></a></div>
+
     </div>
-
- <div style="line-height:90%;">
-    <br>
-</div>
-
     <div class="container">
-    <a href="#" class="button27"><br/><small>Личные вещи (999)<br><img height='49' src='static/images/fon_button1a_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Хобби (999)<br><img height='45' src='static/images/fon_button2a_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Здоровье (999)<br><img height='45' src='static/images/fon_button3a_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Транспорт (999)<br><img height='40' src='static/images/fon_button4a_.jpg' alt=""/></small></a>
-    <a href="#" class="button27"><br/><small>Прочее (999)<br><img height='40' src='static/images/fon_button5a_.jpg' alt=""/></small></a>
-    <a href="#" class="button28"></a>
     </div>
-
-    <hr class="hr-dashed-bg">
- <h2 class="text2">Новые объявления</h2>
-
-    <div class="container_new">
-    <a href="#" class="button29"><small>Заголовок последнего объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок предпоследнего объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления, которое было до предпоследнего</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    </div>
-<br>
-    <div class="container_new">
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    <a href="#" class="button29"><small>Заголовок объявления</small></a>
-    </div>
-
  </body>
 </html>
