@@ -4,7 +4,7 @@
 <header>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <p><b><h1 class="text0">Бартер-НСК</h1></b>
-    <div class="container2">
+    <div class="containertop">
          <button class="menuitem2"><a href="{{url_for('login')}}">Вход</a></button>
          <button class="menuitem2"><a href="{{url_for('register')}}">Регистрация</a></button>
          <div class="search-box">
@@ -271,6 +271,21 @@ a.button29:active {
     word-spacing : 8px;
     text-align: center;
 }
+.containertop {
+      display: flex;
+      overflow: visible;
+      width: 75%;
+      height: 30px;
+      justify-content: space-between;
+      align-items: center;  /* центрируем содержимое кнопки */
+      position: fixed;
+      top: 3px;
+      right: 50px;
+      width: 600px;
+      height: 50px;
+       cursor: pointer;
+      }
+
   .container {
       display: flex;
       overflow: auto;
@@ -285,22 +300,7 @@ a.button29:active {
       height: 104px;
       margin: 0% auto auto 10%;
       }
-
-  .container2 {
-      display: flex;
-      overflow: visible;
-      width: 75%;
-      height: 30px;
-      justify-content: space-between;
-      align-items: center;  /* центрируем содержимое кнопки */
-      position: fixed;
-      top: 3px;
-      right: 50px;
-      width: 600px;
-      height: 50px;
-       cursor: pointer;
-      }
-.container3 {
+.containernew {
       display: flex;
       overflow: auto;
       width: 85%;
@@ -347,7 +347,7 @@ header {
     <hr class="hr-dashed-bg">
  <h2 class="text2">Новые объявления</h2>
 
-    <div class="container3">
+    <div class="containernew">
     <a href="#" class="button29"><p><small>Заголовок последнего объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок предпоследнего объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок объявления, которое было до предпоследнего</small></p></a>
@@ -357,7 +357,7 @@ header {
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
     </div>
 <br>
-    <div class="container3">
+    <div class="containernew">
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
     <a href="#" class="button29"><p><small>Заголовок объявления</small></p></a>
