@@ -6,18 +6,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
      <h1 class="text0">Бартер-НСК</h1>
 
-    <div class="containertop">
+    <div class="container_top">
          <button class="menuitem2">
-             <a href="{{url_for('login')}}">Вход</a></button>
+             <a href="#">Вход</a></button>
          <button class="menuitem2">
-             <a href="{{url_for('register')}}">Регистрация</a></button>
+             <a href="#">Регистрация</a></button>
          <div class="search-box">
   <form action="#">
     <input type="text" size="40"  placeholder="Поиск по объявлениям..." name="search">
     <button type="submit">&#128269;</button>
   </form>
          </div>
-    <div class="hamburger-menu">
+          <div class="hamburger-menu">
      <input id="menu__toggle" type="checkbox" />
      <label class="menu__btn" for="menu__toggle">
       <span></span>
@@ -27,14 +27,14 @@
       <li><a class="menu__item" href="#">Добавить объявление</a></li>
       <li><a class="menu__item" href="#">О проекте</a></li>
       </ul>
-    </div>
+          </div>
     </div>
  </head>
 
  <body>
  <hr class="hr-dashed-bg">
 
-<style>
+  <style type="text/css">
 
 body {
 background-color: #a3a3c2
@@ -245,10 +245,10 @@ a.button29:active {
 
 }
 .text0 {
-  margin-top: -3px;
+    margin-left: 15px;
+    margin-top: -3px;
     margin-bottom: -29px;
-    margin-left: 2%;
-    margin-right: 12%;
+
     color: #cdc6e7;
     word-spacing : 8px;
     text-align: left;
@@ -274,7 +274,7 @@ a.button29:active {
     word-spacing : 8px;
     text-align: center;
 }
-.containertop {
+.container_top {
       display: flex;
       overflow: visible;
       justify-content: space-between;
@@ -301,7 +301,7 @@ a.button29:active {
       height: 104px;
       margin: 0 auto auto 10%;
       }
-.containernew {
+.container_new {
       display: flex;
       overflow: auto;
       width: 85%;
@@ -319,9 +319,7 @@ head {
       width: 100%;
       height: 27px;
 }
-
-
-</style>
+  </style>
   <div class="container1">
     <h2 class="text1">Категории  Реклама </h2>
     <a href="#" class="button27"><br/><small>Готовая еда (999)<br><img height='50' src='static/images/fon_button1_.jpg' alt=""/></small></a>
@@ -348,7 +346,7 @@ head {
     <hr class="hr-dashed-bg">
  <h2 class="text2">Новые объявления</h2>
 
-    <div class="containernew">
+    <div class="container_new">
     <a href="#" class="button29"><small>Заголовок последнего объявления</small></a>
     <a href="#" class="button29"><small>Заголовок предпоследнего объявления</small></a>
     <a href="#" class="button29"><small>Заголовок объявления, которое было до предпоследнего</small></a>
@@ -358,7 +356,7 @@ head {
     <a href="#" class="button29"><small>Заголовок объявления</small></a>
     </div>
 <br>
-    <div class="containernew">
+    <div class="container_new">
     <a href="#" class="button29"><small>Заголовок объявления</small></a>
     <a href="#" class="button29"><small>Заголовок объявления</small></a>
     <a href="#" class="button29"><small>Заголовок объявления</small></a>
